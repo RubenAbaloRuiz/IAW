@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Document1 </title>
+    <script>
+
+        function suma(a,b){
+
+
+            return a+b;
+
+        }
+
+
+        function resta (a,b){
+
+            return a-b;
+        }
+
+
+        function calculadora() {
+            var a = parseInt(document.getElementById("op1").value);
+            var b = parseInt(document.getElementById("op2").value);
+
+            var c=suma(a,b);
+
+            document.getElementById("resultat").innerHTML=c;
+        }
+
+        function calculadoraRes() {
+            var a = parseInt(document.getElementById("op1").value);
+            var b = parseInt(document.getElementById("op2").value);
+
+            var c=resta(a,b);
+
+            document.getElementById("resultat").innerHTML=c;
+        }
+
+
+
+        function reset() {
+
+            document.getElementById("op1").value=0;
+            document.getElementById("op2").value=0;
+            document.getElementById("resultat").innerHTML="";
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    Operando 1:
+    <input type="text" id="op1" value="0"/><br>
+    Operando 2:
+    <input type="text" id="op2" value="0"/><br>
+    <button type="button" onclick="calculadora()"> SUMA </button>
+    <br>
+    <br>
+    <button type="button" onclick="calculadoraRes()"> RESTA </button>
+    <br>
+    <br>
+    <button type="button" onclick="reset()"> RESET </button>
+    <br>
+
+    <p id="resultat"></p>
+
+<script>
+
+    var x=12;
+    var y=32;
+
+    var z=suma(x,y);
+
+
+
+    //document.write("La suma de " + x + " y " + y + " da como resultado: " + z);
+
+
+</script>
+
+</body
+</html>
