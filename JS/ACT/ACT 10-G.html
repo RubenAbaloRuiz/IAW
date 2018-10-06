@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+    var sueldo;
+    var contador=parseInt(1);
+    var medio=parseInt(0);
+    var mayor=parseInt(0)
+    var suma=parseInt(0);
+
+
+    while(contador !=6){
+        sueldo=parseInt(prompt('Indica el salario de la persona ' + contador + ' : ',''));
+
+        suma=suma+sueldo;
+
+
+        if (sueldo>500 && sueldo<1000) {
+            medio++;
+        }else{
+            mayor++;
+        }
+
+        contador++;
+    }
+
+    document.write("Hay " + medio + " trabajadores con un sueldo entre 500 y 1000 euros:");
+    document.write("<br />Hay " + mayor + " trabajadores con un sueldo entre superior a 1000 euros: ");
+    document.write("<br />La suma de los salarios es " + suma);
+
+
+</script>
+</body>
+</html>

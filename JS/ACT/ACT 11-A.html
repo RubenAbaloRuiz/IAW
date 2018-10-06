@@ -1,0 +1,39 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+    var numero=parseInt(0);
+    var valor=parseInt(0);
+
+
+
+
+
+    do {
+
+        numero=parseInt(prompt('Indica un numero: ',''));
+
+        if (numero != 9999){
+            valor=valor+numero;
+        }
+
+
+
+
+    } while(numero !=9999);
+
+    if( valor = 0 ){
+        document.write("La suma de los numeros es ZERO: " + valor);
+    }else if (valor>0){
+        document.write("La suma de los numeros es POSITIVA:  " + valor);
+    }else {
+        document.write("La suma de los numeros es NEGATIVA: " + valor);
+    }
+
+
+
+</script>
+</body>
+</html>

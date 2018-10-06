@@ -1,0 +1,74 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+var hombre=parseInt(0);
+var mujer=parseInt(0);
+var mediana=parseInt(0);
+var joven=parseInt(50);
+var vieja=parseInt(0);
+var idvieja=parseInt(0);
+var personas=parseInt(0);
+var idjoven=parseInt(100);
+
+
+    do {
+
+        var id=parseInt(prompt('Indica un id: ',''));
+
+        if (id !=0) {
+
+
+            var age=parseInt(prompt('Indica una edad: ',''));
+
+            var sexo=prompt('Indica un genero: ','');
+
+
+
+            if(sexo == "hombre"){
+                hombre++;
+                if(age>18 && age<65){
+                    mediana++;
+                }
+                if(age<joven){
+                    joven=age;
+                    idjoven=id;
+
+                }
+            }else{
+                mujer++;
+                if(age>vieja){
+                    vieja=age;
+                    idvieja=id;
+                }
+            }
+
+
+            personas++;
+
+        }
+
+
+
+
+
+
+    } while(id !=0);
+
+
+        document.write("Hay " + personas + " personas");
+        document.write("<br />Hay " + hombre + " hombres");
+        document.write("<br />Hay " + mujer + " mujeres");
+        document.write("<br />Hay " + mediana + " hombres entre los 18 y los 65");
+        document.write("<br />El id de la mujer mas vieja es " + idvieja);
+        document.write("<br />El id del hombre mas joven es " + idjoven);
+
+
+
+
+
+</script>
+</body>
+</html>

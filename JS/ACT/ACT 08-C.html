@@ -14,12 +14,14 @@
 
 
     if (x>0 && y>0) {
-        document.write("El primero introducido " + num1 + " es el numero mas pequeño");
+        document.write("First Quadrant");
     }
-    else if (num2<num1 && num2<num3){
-        document.write("El segundo introducido " + num2 + " es el numero mas pequeño");
+    else if (x<0 && y>0){
+        document.write("Second Quadrant");
+    }else if (x<0 && y<0){
+        document.write("Third Quadrant");
     }else{
-        document.write("El tercero introducido " + num3 + " es el numero mas pequeño");
+        document.write("Fourth Quadrant");
     }
 
 </script>

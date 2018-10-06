@@ -1,0 +1,36 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+    var i;
+    var base=parseInt(0);
+    var altura=parseInt(0);
+    var area=parseInt(0);
+    var numero=parseInt(0);
+
+
+
+
+    for (i=1; i <= 3;i++){
+        base=prompt('Inserta la base del triangulo','');
+        altura=prompt('Inserta la altura del triangulo','');
+
+
+        area=base*altura/2;
+
+        document.write("<br>El area del triangulo numero " + i + " es " + area + ".");
+
+        if (area>12){
+            numero++;
+        }
+
+    }
+
+    document.write("<br>" + numero + " triangulos tienen un area mayor a 12.")
+
+
+
+</script>
+</body>
+</html>

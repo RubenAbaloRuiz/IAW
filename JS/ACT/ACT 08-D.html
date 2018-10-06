@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+    var salary,years;
+
+
+    salary=parseInt(prompt('Indica tu salario:',''));
+    years=parseInt(prompt('Años en la compañia:',''));
+
+
+
+
+    if (salary<500 && years>10) {
+        salary=salary+(salary/5);
+        document.write("Con un incremento del 20% tu salario es: " + salary);
+    }
+    else if (salary<500 && years<10){
+        salary=salary+(salary*5/100);
+        document.write("Con un incremento del 5% tu salario es: " + salary);
+    }else if (salary>500){
+        document.write("No increment");
+    }else{
+        document.write("NOPE");
+    }
+
+</script>
+</body>
+</html>

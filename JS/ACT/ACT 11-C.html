@@ -1,0 +1,41 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+    var contador=parseInt(0);
+    var id=parseInt(0);
+    var nombre;
+    var dinero=parseInt(0);
+    var suma=parseInt(0);
+    var posicion=parseInt(0);
+
+    contador=parseInt(prompt('Especifica el numero de cuentas que vas a insertar',''));
+
+    do {
+
+        id=parseInt(prompt('Inserta el numero de cuenta',''));
+        nombre=prompt('Inserta el nombre del cliente','');
+        dinero=parseInt(prompt('Inserta el dinero de la cuenta',''));
+
+        document.write(nombre + " es el propietario de la cuenta numero " + id + " con " + dinero + " euros en ella.");
+
+        document.write("<br>");
+        document.write("<br>");
+
+        suma=suma+dinero;
+
+        posicion++;
+
+    } while(posicion != contador);
+
+
+    document.write("La suma total de todas las cuentas es: " + suma);
+
+
+
+
+</script>
+</body>
+</html>

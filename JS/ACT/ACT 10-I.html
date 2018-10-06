@@ -1,0 +1,28 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+    var numer;
+    var contador=parseInt(0);
+    var par=parseInt(0);
+    var impar=parseInt(0);
+
+    while(contador !=5){
+        numer=parseInt(prompt('Indica un numero: ',''));
+
+       if ((numer % 2) == 0){
+           par++;
+       }else{
+           impar++;
+       }
+
+        contador++;
+
+    }
+
+    document.write("Hay " + par + " numeros par y " + impar + " numeros impar;");
+
+</script>
+</body>
+</html>

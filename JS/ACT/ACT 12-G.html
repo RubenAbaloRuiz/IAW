@@ -1,0 +1,59 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+    var i;
+    var nota;
+    var suma=parseInt(0);
+    var mediaA=parseInt(0);
+    var mediaB=parseInt(0);
+    var mediaC=parseInt(0);
+
+
+    for (i=1; i <= 5;i++){
+
+        nota=parseInt(prompt('Clase A: Especifica la nota del alumno numero ' + i + ' ',''));
+
+        suma=suma+nota;
+
+
+    }
+    mediaA=suma/5;
+    suma=0
+
+    for (i=1; i <= 6;i++){
+
+        nota=parseInt(prompt('Clase B: Especifica la nota del alumno numero ' + i + ' ',''));
+
+        suma=suma+nota;
+
+
+    }
+
+    mediaB=suma/6;
+    suma=0
+
+    for (i=1; i <= 11;i++){
+
+        nota=parseInt(prompt('Clase C: Especifica la nota del alumno numero ' + i + ' ',''));
+
+        suma=suma+nota;
+
+
+    }
+
+    mediaC=suma/11;
+
+
+
+    document.write("<br> La clase A tiene una media de  " + mediaA + ". ");
+    document.write("<br> La clase B tiene una media de  " + mediaB + ". ");
+    document.write("<br> La clase C tiene una media de  " + mediaC + ". ");
+
+
+
+
+</script>
+</body>
+</html>

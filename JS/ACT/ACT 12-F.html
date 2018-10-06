@@ -1,0 +1,42 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+    var i;
+    var number;
+    var positivo=parseInt(0);
+    var negative=parseInt(0);
+    var impar=parseInt(0);
+    var suma=parseInt(0);
+
+
+
+    for (i=1; i <= 10;i++){
+
+        number=parseInt(prompt('Especifica un numero',''));
+
+        if(number>0){
+            positivo++;
+        }else if(number<0){
+            negative++;
+        }
+
+        if((number % 2) == 0){
+            suma=suma+number;
+        }else{
+            impar++;
+        }
+
+
+    }
+
+    document.write("<br> Hay " + positivo + " numeros positivos ");
+    document.write("<br> Hay " + negative + " numeros negativos ");
+    document.write("<br> Hay " + impar + " numeros impares ");
+    document.write("<br> La suma de los numeros pares es " + suma + ". ");
+
+
+</script>
+</body>
+</html>

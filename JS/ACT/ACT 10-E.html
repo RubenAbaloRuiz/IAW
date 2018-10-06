@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+
+    var contador=parseInt(1);
+    var aprobados=parseInt(0);
+    var suspendidos=parseInt(0);
+
+
+
+
+    while(contador !=11){
+        nota=prompt('Indica la nota del alumno Nº ' + contador + ' : ','');
+
+        if(nota>=5){
+            aprobados++;
+        }else{
+            suspendidos++;
+        }
+
+        contador++;
+    }
+
+    document.write("Han aprobado " + aprobados + " alumnos y han suspendido " + suspendidos);
+
+
+</script>
+</body>
+</html>
