@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+
+    var elements=new Array(8);
+    var sum=parseInt(0);
+    var avg=parseInt(0);
+    var t5=parseInt(0);
+    var m5=parseInt(0);
+
+    for (var i=0;i<elements.length;i++){
+
+        num=parseInt(prompt('Introduce un numero',''));
+
+        sum += num;
+        avg = sum/elements.length;
+
+        if (num>5){
+            t5 += num;
+            m5++;
+        }
+
+    }
+
+    document.write("Total suma de los numeros: " + sum);
+    document.write("<br>" + "Media de los numeros: " + avg);
+    document.write("<br>" + "Suma total de los numeros mayores a 5: " + t5);
+    document.write("<br>" + "Total de numeros mayor a 5: " + m5);
+
+
+
+</script>
+</body>
+</html>

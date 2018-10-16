@@ -1,0 +1,30 @@
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+
+
+    function minimo(a,b,c){
+
+        if(a<b && a<c){
+            return a;
+        }else if(b<a && b<c){
+            return b;
+        }else{
+            return c;
+        }
+    }
+
+
+
+    var num1=parseInt(prompt('Inserta el primer numero:',''));
+    var num2=parseInt(prompt('Inserta el segundo numero:',''));
+    var num3=parseInt(prompt('Inserta el tercer numero:',''));
+
+
+    document.write(minimo(num1,num2,num3));
+
+
+</script>
+</body>
+</html>

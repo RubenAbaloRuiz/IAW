@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<script>
+
+    var palabra=prompt('Inserta una palabra','');
+
+
+
+    function palindroma(string){
+        return string == string.split('').reverse().join('');
+    }
+
+    if (palindroma(palabra) == true){
+        document.write("La palabra " + palabra + " es palindroma.");
+    }else{
+        document.write("La palabra " + palabra + " no es palindroma.");
+    }
+
+
+
+</script>
+
+
+</body>
+</html>

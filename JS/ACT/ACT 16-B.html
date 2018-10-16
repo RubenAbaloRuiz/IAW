@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+
+    var num=parseInt(prompt('Indica como de grande quieres la raiz',''));
+    var first=parseInt(prompt('Indica el primer numero de la raiz',''));
+    var second=parseInt(prompt('Indica el segundo numero de la raiz',''));
+
+    var elements=new Array(num-2);
+
+
+    for (var i=0;i<elements.length;i++){
+
+        elements[i]=1;
+
+    }
+
+
+    elements.unshift(second);
+    elements.unshift(first);
+
+    document.write("Array: " + elements);
+
+
+
+</script>
+</body>
+</html>

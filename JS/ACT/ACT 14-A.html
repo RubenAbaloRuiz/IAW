@@ -1,0 +1,51 @@
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+
+
+    function Addition(v1,v2) {
+        this.v1=v1;
+        this.v2=v2;
+        this.loadValue1=loadValue1;
+        this.loadValue2=loadValue2;
+        this.result=result;
+
+    }
+
+    function loadValue1(){
+        return this.v1;
+    }
+
+    function loadValue2(){
+        return this.v2;
+    }
+
+    function result(){
+        return this.v1+this.v2;
+    }
+
+
+
+
+
+    var ad1;
+    ad1=new Addition(10,20);
+
+    var ad2;
+    ad2=new Addition(40,50);
+
+    document.write(ad1.loadValue1());
+    document.write("<br>" + ad1.loadValue2());
+    document.write("<br>" + ad1.result());
+
+    document.write("<br>" + ad2.loadValue1());
+    document.write("<br>" + ad2.loadValue2());
+    document.write("<br>" + ad2.result());
+
+
+
+
+</script>
+</body>
+</html>

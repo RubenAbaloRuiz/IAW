@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<script>
+
+    var string=prompt('Inserta una palabra ','');
+    var counter=parseInt(0);
+    var vocales = ["a","e","i","o","u"];
+
+
+
+
+
+
+
+
+    document.write("Media parte de la palabra: " + string.substring(0,string.length / 2));
+    document.write("<br>" + "Ultimo caracter: " + string.slice(-1));
+    document.write("<br>" + "Palabra al reves: " +  string.split("").reverse().join(""));
+
+    for (var i=0;i<string.length;i++){
+        var n=string.charAt(i);
+
+        document.write("<br>" + "Letra numero: " + (i+1) + "  " + n);
+
+        if (vocales.includes(n)){
+            counter++;
+        }
+    }
+
+    document.write("<br>" + "Numero de vocales en la palabra: " + counter);
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
