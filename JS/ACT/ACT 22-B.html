@@ -1,0 +1,47 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    function calculo() {
+        var p1=document.getElementById('proces');
+        var p=parseInt(p1.options[p1.selectedIndex].value);
+
+        var m1=document.getElementById('monitor');
+        var m=parseInt(m1.options[m1.selectedIndex].value);
+
+        var h1=document.getElementById('hardware');
+        var h=parseInt(h1.options[h1.selectedIndex].value);
+
+        var x=parseInt(p+m+h);
+
+        document.getElementById('text').value=x;
+
+    }
+</script>
+
+    <select id="proces">
+        <option value="400">Intel I3</option>
+        <option value="600">Intel I5</option>
+        <option value="800">Intel I7</option>s
+    </select>
+    <br>
+    <select id="monitor">
+        <option value="250">Samsung 20'</option>
+        <option value="350">Samsung 22'</option>
+        <option value="550">Samsung 26'</option>
+    </select>
+    <br>
+    <select id="hardware">
+        <option value="300">500 Gb</option>
+        <option value="440">1 Tb</option>
+        <option value="500">3 Tb</option>
+    </select>
+    <br>
+    <br>
+    <button onClick="calculo()">Calcular</button>
+
+    Precio Total:<input type="text" id="text"><br>
+
+
+</body>
+</html>

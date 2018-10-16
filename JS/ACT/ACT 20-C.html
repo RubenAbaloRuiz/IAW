@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    function conca(){
+        var n=document.getElementById("name").value;
+        var t=document.getElementById("sur").value;
+
+        var x=n.concat(' ',t);
+        alert(x)
+
+
+    }
+</script>
+<form>
+    Enter a NAME: <input type="text" id="name"><br/>
+    Enter a SURNAME: <input type="text" id="sur"><br/>
+    <button onClick="conca()">Pulsa aqui</button>
+    <br>
+    <p id="demo"></p>
+</form>
+</body>
+</html>

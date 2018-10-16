@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <script>
+        var meses;
+        data=new Date();
+        meses= parseInt(data.getMonth());
+        if (meses<=2)
+        {
+            res="El mes " + meses + " esta en el primer trimestre";
+        }
+
+        else if (meses>=3 && meses<=5)
+        {
+            res="El mes " + meses + " esta en el segundo trimestre";
+        }
+
+        else if (mes>=6 && mes<=8)
+        {
+            res="El mes " + meses + " esta en el tercer trimestre";
+        }
+        else if (meses>=9 && meses<=11)
+        {
+            res="El mes " + meses + " esta en el cuarto trimestre";
+        }
+
+
+        document.write(res);
+    </script>
 </head>
 <body>
 
 </body>
 </html>
-
-????????????????????

@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    function precio() {
+        var opcion=document.getElementById('pizzas');
+
+        var c=parseInt(document.getElementById('cantidad').value);
+        var n=parseInt(opcion.options[opcion.selectedIndex].value);
+
+        var x=parseInt(c*n);
+        document.getElementById('text').value=x;
+
+
+    }
+</script>
+
+    <select id="pizzas">
+        <option value="6">Pepperoni</option>
+        <option value="5">Quatro Formaggi</option>
+        <option value="4">Procciuto</option>
+    </select>
+    <br>
+    <br>
+    Indica cuantas quieres: <input type="text" id="cantidad"><br/>
+    <br>
+    Precio Total:<input type="text" id="text"><br>
+    <button onClick="precio()">Preu</button>
+
+</body>
+</html>

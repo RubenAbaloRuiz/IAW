@@ -1,0 +1,63 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    function quest() {
+        var q1=document.getElementById('Q1');
+        var p1=parseFloat(q1.options[q1.selectedIndex].value);
+
+        var q2=document.getElementById('Q2');
+        var p2=parseFloat(q2.options[q2.selectedIndex].value);
+
+        var q3=document.getElementById('Q3');
+        var p3=parseFloat(q3.options[q3.selectedIndex].value);
+
+        var q4=document.getElementById('Q4');
+        var p4=parseFloat(q4.options[q4.selectedIndex].value);
+
+
+        var x=parseInt(p1+p2+p3+p4);
+        document.getElementById('text').value=x;
+
+
+    }
+</script>
+
+<p>De que color es el cielo</p>
+<select id="Q1">
+    <option></option>
+    <option value="2.5">Azul</option>
+    <option value="0">Verde</option>
+    <option value="0">Blanco</option>
+</select>
+<br>
+<p>Nombre de gorila Blanco</p>
+<select id="Q2">
+    <option></option>
+    <option value="2.5">Copito Nieve</option>
+    <option value="0">Harambe</option>
+    <option value="0">Hachiko</option>
+</select>
+<br>
+<p>NºPeliculas Harry Potter</p>
+<select id="Q3">
+    <option></option>
+    <option value="2.5">8</option>
+    <option value="0">5</option>
+    <option value="0">7</option>
+</select>
+<br>
+<p>Donde se estrello Krokens?</p>
+<select id="Q4">
+    <option></option>
+    <option value="2.5">Krokurva</option>
+    <option value="0">Krogiro</option>
+    <option value="0">Krovuelta</option>
+</select>
+<br>
+<br>
+Nota Total:<input type="text" id="text"><br>
+<button onClick="quest()">Preu</button>
+
+</body>
+</html>

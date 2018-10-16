@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    function big(){
+        var n=document.getElementById("number1").value;
+        var t=document.getElementById("number2").value;
+
+        if (t>n){
+            alert(t + " es el numero mayor")
+        }else{
+            alert(n + " es el numero mayor")
+        }
+
+
+    }
+</script>
+<form>
+    Enter a number: <input type="text" id="number1"><br/>
+    Enter a number: <input type="text" id="number2"><br/>
+    <button onClick="big()">Pulsa aqui</button>
+    <br>
+    <p id="demo"></p>
+</form>
+</body>
+</html>

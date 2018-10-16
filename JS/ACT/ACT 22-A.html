@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+    function precio() {
+        var opcion=document.getElementById('pizzas');
+        document.getElementById('text').value=opcion.options[opcion.selectedIndex].value;
+
+    }
+</script>
+<form>
+    <select id="pizzas" onChange="precio()">
+        <option value="6 euros">Pepperoni</option>
+        <option value="5 euros">Quatro Formaggi</option>
+        <option value="4 euros">Procciuto</option>
+    </select>
+    <br>
+    Precio:<input type="text" id="text"><br>
+
+</form>
+</body>
+</html>
