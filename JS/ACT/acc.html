@@ -2,27 +2,11 @@
 <head></head>
 <body>
 <script type="text/javascript">
-    function showSelected() {
-        if (document.getElementById('radio1').checked) {
-            alert('Option A');
-        }
-        if (document.getElementById('radio2').checked) {
-            alert('Option B');
-        }
-        if (document.getElementById('radio3').checked) {
-            alert('Option C');
-        }
-        if (document.getElementById('radio4').checked) {
-            alert('Option D');
-        }
-    }
+    document.write('Values of navigator object properties:<br>');
+    document.write('appName :' + navigator.appName + '<br>');
+    document.write('appVersion :' + navigator.appVersion + '<br>');
+    document.write('cookieEnabled :' + navigator.cookieEnabled + '<br>');
+    document.write('plugins :' + navigator.plugins.length + '<br>');
 </script>
-<form>
-    <input type="radio" id="radio1" name="A">Option A <br/>
-    <input type="radio" id="radio2" name="B">Option B <br/>
-    <input type="radio" id="radio3" name="C">Option C <br/>
-    <input type="radio" id="radio4" name="D">Option D <br/>
-    <input type="button" value="Mostrar" onClick="showSelected()">
-</form>
 </body>
 </html>

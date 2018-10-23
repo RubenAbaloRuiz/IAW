@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+<script type="text/javascript">
+
+    function chechPass(pass){
+        if ((pass.value.length<7) || (pass.value.length>20))
+            alert('La contraseña introducida no cumple con la longitud adecuada');
+    }
+</script>
+<form>
+    <input type="text" id="username"><br>
+    <input type="text" id="password"  onBlur="chechPass(this)" >
+    <br>
+    <input type="button" value="Confirm">
+</form>
+</body>
+</html>
