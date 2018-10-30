@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<h1>ES UN H1</h1>
+<p>PRIMER PARAGRAFO</p>
+<h1>ES SEGUNDO H1</h1>
+<p>SEGUNDO PARAGRAFO</p>
+<h1>ES TERCER H1</h1>
+<br>
+<button id="bt1">10px</button>
+<button id="bt2">15px</button>
+<button id="bt3">20px</button>
+<script>
+    $(document).ready(function(){
+        $("#bt1").click(function(){
+            $("h1,p:odd").css("font-size","10px"    );
+        });
+    });
+
+    $(document).ready(function(){
+        $("#bt2").click(function(){
+            $("h1,p:odd").css("font-size","15px");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#bt3").click(function(){
+            $("h1,p:odd").css("font-size","20px");
+        });
+    });
+</script>
+</body>
+</html>

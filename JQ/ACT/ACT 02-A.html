@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<table border="1">
+    <tr><td>TD #3</td></tr>
+    <tr><td>TD #6</td></tr>
+</table>
+<script>
+
+    $(document).ready(function(){
+        $("tr").click(function(){
+            $(this).css("background-color","#ffff00");
+        });
+    });
+
+    $(document).ready(function(){
+        $("tr:first").click(function(){
+            $(this).css("background-color","#333333");
+        });
+    });
+</script>
+</body>
+</html>

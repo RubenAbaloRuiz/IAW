@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<p></p>
+<button id="bt1">HEAD</button>
+<button id="bt2">BODY</button>
+<script>
+    $(document).ready(function(){
+        $("#bt1").click(function(){
+            x=$("p").html(' <meta charset="UTF-8"> <title>Title</title> <script src="jquery-3.3.1.min.js"><script>');
+            alert(x.html());
+        });
+    });
+
+    $(document).ready(function(){
+        $("#bt2").click(function(){
+            x=$("p").html(' <p></p> <button id="bt1">HEAD</button> <button id="bt2">BODY</button>');
+            alert(x.html());
+        });
+    });
+
+
+
+
+
+</script>
+</body>
+</html>

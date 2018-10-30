@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<a href="">Pagina Web</a>
+<br>
+<br>
+
+<button id="bt1">Google</button>
+<button id="bt2">Bing</button>
+<button id="bt3">Yahoo</button>
+<script>
+    $(document).ready(function(){
+        $("#bt1").click(function(){
+            $("a").attr("href","https://www.google.es/");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#bt2").click(function(){
+            $("a").attr("href","https://www.bing.com/");
+        });
+    });
+
+    $(document).ready(function(){
+        $("#bt3").click(function(){
+            $("a").attr("href","https://es.yahoo.com/");
+        });
+    });
+</script>
+</body>
+</html>
