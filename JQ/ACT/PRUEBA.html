@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
-<h2>ES UN H2</h2>
-<p>PRIMER PARAGRAFO</p>
-<p>SEGUNDO PARAGRAFO</p>
-<button>CLIC</button>
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            $(this).hide();
-        });
-    });
-</script>
+<a href="http://www.google.com">Google</a> <br>
+<a href="http://www.bing.com">Bing</a> <br>
+<a href="http://www.iesmanacor.org">IES Manacor</a> <br>
 </body>
 </html>
+
+functions.js:
+var x;
+x=$(document);
+x.ready(initEvents);
+
+function initEvents() {
+var x;
+x=$("a");
+x.mouseover(enterMouse);
+x.mouseout(exitMouse);
+}
+
+function enterMouse() {
+$(this).css("background-color","#ff0");
+}
+
+function exitMouse() {
+$(this).css("background-color","#fff");
+}

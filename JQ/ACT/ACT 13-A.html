@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<div style="height:200px; width:200px; ">ESTE DIV</div>
+<script>
+
+    $(document).ready(function(){
+        var x=$("div");
+        x.mousemove(function(event){
+            $(this).text(event.pageX + ", " + event.pageY);
+        });
+        x.mouseout(function(){
+            $(this).text("Mouse out of the DIV");
+        });
+    });
+
+</script>
+
+</body>
+</html>
