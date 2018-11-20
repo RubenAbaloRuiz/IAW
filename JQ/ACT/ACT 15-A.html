@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<div style="height:800px; width:70px; background-color: red;"></div>
+<script>
+
+    $(document).ready(function(){
+        var x=$("div");
+        x.dblclick(function(){
+            $(this).height("250px");
+            $(this).width("250px");
+            x.dblclick(function(){
+                $(this).height("800px");
+                $(this).width("70px");
+            });
+        });
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        input { }
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" id="i1" style="color:blue;">
+    <input type="text" id="i2" style="color:blue;">
+</form>
+
+
+
+<script>
+    $(document).ready(function(){
+        $("input").blur(function (){
+            if($(this).val().length == 0){
+                alert("Field can't be empty");
+            }});
+    });
+
+
+
+
+</script>
+</body>
+</html>

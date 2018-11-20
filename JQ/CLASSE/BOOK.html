@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../ACT/jquery-3.3.1.min.js"></script>
+    <script>
+
+
+            var llibres= new Array();
+
+            function crearTaula(){
+                var t = $("<table/>");
+                var tr = $("<tr/>");
+
+                //Table header
+                var th = $("<th/>",{text:"#"});
+                tr.append(th);
+                for (var i=0;i<=3;i++){
+                    th = $("<th/>",{text:"0"});
+                    tr.append(th);
+                }
+                t.append(tr);
+
+                for(var f=0;f<=3;f++){
+                    tr = $("<tr/>");
+var th =
+                    for(var c=0;c<=3,c++){
+                        var td = $("<td/>",{text:" fila "+f+, col:"+c"});
+                        tr.append(td)
+                    }
+                    t.append(tr)
+                }
+
+                $("#printer").html(t);
+            }
+
+
+            function Llibre(t,p,c,col,row){
+                this.title=t;
+                this.numero=p;
+                this.categoria=c;
+                this.columna=col;
+                this.rows=row;
+
+                var ocupat = false;
+
+                for (var i = 0; i<llibres.length;i++){
+                    var l = llibres[i];
+                    if (l.columna == col && l.rows == row){
+                        ocupat=true;
+                        break;
+                    }
+                }
+
+                if(!ocupat){
+                    var nouLlibre = new Llibre (t,p,c,col,row);
+                    llibres.push(nouLlibre);
+                }else{
+                    alert("POSICION OCUPADA")
+                }
+
+
+            }
+
+        $(document).ready(function () {
+            $("#b1").click(function () {
+
+                var t = $("#title").val();
+                var p = $("#pages").val();
+                var c = $("#cats").val();
+                var col = $("#col").val();
+                var row = $("#row").val();
+
+                var l = new Llibre(t,p,c,col,row);
+                llibres.push(1);
+            });
+            $("#b2").click(function () {
+
+                var col = $("#col").val();
+                var row = $("#row").val();
+
+                for(var i=0;i<llibres.length;i++){
+                    var l= llibres[i];
+                    if(l.columna == col && l.rows == row){
+                        llibres.splice(i,1);
+                        break;
+                    }
+                }
+            });
+            $("#b3").click(function () {
+                var mevaOL = $("<ol/>");
+                for(var i=0;i<llibres.length;i++){
+                    var l= llibres[i];
+                    var info = l.title+" "+l.numero+" "+l.categoria;
+                    var nouLI = $("<li/>",{text:info});
+                    mevaOL.append(nouLI);
+
+                }
+                $("#printer").html(mevaOL);
+
+            });
+            $("#b5").click(function () {
+                alert("NUM LLIBRES" + " " + llibres.length);
+            });
+            $("#b4").click(function () {
+                $("div").html(crearTaula());
+            });
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<style>
+    td { text-align:center;}
+</style>
+<body>
+TITLE: <input type="text" id="title" /><br/>
+NUM.PAGES: <input type="text" id="pages" /><br/>
+CATEGORY:
+<select id="cats">
+    <option value="CLASSIC">CLASSIC</option>
+    <option value="SCIENCE">SCIENCE</option>
+    <option value="SPORTS">SPORTS</option>
+    <option value="COMEDY">COMEDY</option>
+</select> <br/>
+POSITION (COL / ROW):
+<select id="col">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select> /
+<select id="row">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select> <br/>
+<button id="b1">ADD BOOK</button>
+<button id="b2">REMOVE BOOK</button>
+<button id="b3">PRINT ALL BOOKS</button>
+<button id="b4">PRINT LIBRARY</button>
+<button id="b5">NUM BOOKS</button>
+<hr/>
+<div id="printer"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<button value="Add" id="bt1" onclick="add()">ADD NEW INPUT</button>
+<br>
+<form>
+
+</form>
+
+<script>
+
+
+    function add() {
+        $("form").append("<div></div>");
+        $("div").last().append("<br>","<input type='text'>","  ","<button onclick='remove(this)'>Eliminar Input</button>","<br>")
+    }
+
+    function remove(element){
+        $(element).closest('div').remove();
+    }
+
+</script>
+</body>
+</html>
