@@ -1,0 +1,8 @@
+<html>
+<body>
+<form action="18A-SUBMIT.php" method="post">
+Nombre de curso: <input type="text" name="nombre">
+<input type="submit">
+</form>
+</body>
+</html>
