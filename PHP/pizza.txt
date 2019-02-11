@@ -1,0 +1,6 @@
+Paco
+Los alamos 12
+Pizzas Prosciuto:3
+Pizzas Napolitana:3
+Pizzas Mozzarela:3
+Precio Total:51
